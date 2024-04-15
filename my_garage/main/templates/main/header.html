@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo1">CarAnalytics</a>
+        <img src="https://images.vexels.com/media/users/3/154251/isolated/preview/fef0c563c39f2746c35604e969ffe3ef-bmw-car-front-view-silhouette.png" class="pic">
+        <nav>
+            <ul>
+                <li class="#"><a href="#">Авторизация/Регистрация</a></li>
+                <li><a href="#">Мой автопарк</a></li>
+                <li><a href="#">Новости в мире авто</a></li>
+                <li><a href="#">Настройки &bigtriangledown;</a>
+                    <ul>
+                        <li><a href="#">Напоминание</a></li>
+                        <li><a href="#">Помощь &bigtriangledown;</a>
+                            <ul class="submenu">
+                                <li><a href="{% url 'instruction' %}" class="instruc">Инструктаж</a></li>
+                                <li><a href="#">Чат с поддержкой</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">О приложении &bigtriangledown;</a>
+                    <ul class="submenu">
+                        <li><a href="#">Предложить идею</a></li>
+                        <li><a href="#">Версия 1.1.1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
