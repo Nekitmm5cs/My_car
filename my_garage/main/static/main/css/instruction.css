@@ -79,6 +79,11 @@ img {
     height: 100px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .button-container {
     display: flex;
     justify-content: space-around;
