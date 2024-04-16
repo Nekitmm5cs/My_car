@@ -57,7 +57,7 @@ h1:hover {
 
 p {
     padding: 3%;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -132,3 +132,19 @@ a {
 .button-container button:hover::after {
     transform: translateX(0%);
 }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close {
+    width: 1px;
+    height: 15px;
+}
+
+
+
+
+
