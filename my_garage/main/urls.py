@@ -7,4 +7,5 @@ urlpatterns = [
     path('input', views.input_view, name='input'),
     path('reminder', views.reminder_view, name='reminder'),
     path('map', views.map_view, name='map'),
+    path('idea', views.idea_view, name='idea'),
 ]

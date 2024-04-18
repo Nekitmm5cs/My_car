@@ -14,3 +14,6 @@ def reminder_view(request):
 
 def map_view(request):
     return render(request, 'main/instruction/map.html')
+
+def idea_view(request):
+    return render(request, 'main/idea.html')

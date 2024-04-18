@@ -51,6 +51,15 @@ header nav ul li {
     float: left;
 }
 
+header nav ul li:nth-child(3) {
+    padding-left: 6.7px;
+    padding-right: 6.7px;
+}
+
+header nav ul li:nth-child(3) ul li {
+    text-align: center;
+}
+
 header nav ul li a {
     padding: 20px;
     color: white;
@@ -110,3 +119,5 @@ nav ul li ul li:hover {
     background: rgb(55, 55, 55); 
     border: 1px solid rgba(255, 255, 255, 0.216);
 }
+
+
