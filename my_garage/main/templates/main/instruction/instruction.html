@@ -1,35 +1,45 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="{% static 'main/css/instruction.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="window-container">
         <div class="window-box">
-            <div class="close-btn" onclick="history.go(-1);">
-                <img src="{% static 'icons/close.png' %}" alt="сlose">
+            <div class="close-btn">
+                <a href="{% url 'menu' %}">
+                    <img src="https://ikonki.svgpng.ru/wp-content/uploads/2021/12/Krestiksvgpng.ru_.png" alt="Закрыть">
+                </a>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/5146/5146900.png" alt="">
+            {% block icon %}
+            <img src="https://cdn-icons-png.flaticon.com/512/5146/5146900.png" alt="Иконка регистрации">
+            {% endblock %}
+
             {% block title %}
             <h1>Регистрация</h1>
             {% endblock %}
 
             {% block p %}
-            <p>Если <span>вы</span> <span>зарегистрируетесь</span> <span>в</span> <span>нашей</span> <span>системе,</span> <span>вы</span> <span>сможете</span> <span>получить</span> <span>доступ</span> <span>к</span> <span>вашим</span> <span>автомобилям</span> <span>с</span> <span>любого</span> <span>устройства</span> <span>через</span> <span>наш</span> <span>веб-сайт</span> <span>.</span> <span>Все</span> <span>ваши</span> <span>данные</span> <span>будут</span> <span>храниться</span> <span>централизованно</span> <span>и</span> <span>бесплатно</span> <span>в</span> <span>течение</span> <span>неограниченного</span> <span>времени.</span>
+            <p><span>Если</span> <span>вы</span> <span>зарегистрируетесь</span> <span>в</span> <span>нашей</span> <span>системе,</span> <span>вы</span> <span>сможете</span> <span>получить</span> <span>доступ</span> <span>к</span> <span>вашим</span> <span>автомобилям</span> <span>с</span> <span>любого</span> <span>устройства</span> <span>через</span> <span>наш</span> <span>веб-сайт.</span> <span>Все</span> <span>ваши</span> <span>данные</span> <span>будут</span> <span>храниться</span> <span>централизованно</span> <span>и</span> <span>бесплатно</span> <span>в</span> <span>течение</span> <span>неограниченного</span> <span>времени.</span></p>
             {% endblock %}
-                <div class="button-container">
-                    {% block back %}<button class="back"><a href="">Назад</a></button>{% endblock %}
-                    {% block next %}<button class="next"><a href="{% url 'input' %}">Далее</a></button>{% endblock %}
-                </div>       
+
+            <div class="button-container">
+                {% block back %}
+                <button class="back"><a href="{% url 'input' %}">Назад</a></button>
+                {% endblock %}
+                
+                {% block next %}
+                <button class="next"><a href="{% url 'reminder' %}">Далее</a></button>
+                {% endblock %}
+            </div>       
         </div>
     </div>
-
-    </body>
+</body>
 </html>

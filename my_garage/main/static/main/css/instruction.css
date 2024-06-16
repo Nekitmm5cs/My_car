@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    user-select: none;
 }
 
 .instruc {
@@ -41,14 +42,14 @@ body {
     padding: 20px;
     color: white;
     box-shadow: 0 1px 5px #000;
+    position: relative;
 } 
 
 h1 {
     color: rgb(237, 189, 94);
     text-align: center;
     transition: color 0.3s;
-    position: relative; 
-
+    position: relative;
 }
 
 h1:hover {
@@ -65,16 +66,17 @@ p {
 p span {
     position: relative;
     color: white;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 p span:hover {
-    color: rgb(237, 189, 94); 
+    color: rgb(237, 189, 94);
 }
 
 img {
     display: block;
-    margin-left: 40%;
+    margin-left: auto;
+    margin-right: auto;
     width: 100px;
     height: 100px;
 }
@@ -90,29 +92,23 @@ a {
     margin-top: 20px;
 }
 
+
 .button-container button {
     position: relative;
-    padding: 15px 40px;
+    padding: 10px 25px;
     border: 2px solid transparent;
-    border: 2px solid rgb(160, 160, 160, .1);
-    color: white;
+    border-color: rgb(160, 160, 160, .1);
     border-radius: 7px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     overflow: hidden;
     z-index: 1000;
+    transition: border-color 0.3s ease;
 }
 
-.button-container button::before,
-.button-container button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 190, 61, 0.832); 
-    transition: transform 0.3s ease; 
+.button-container button:hover {
+    border-color: rgb(235, 181, 72); 
 }
 
 .button-container button::before {
@@ -136,15 +132,11 @@ a {
 .close-btn {
     position: absolute;
     top: 10px;
+    right: 10px; 
     cursor: pointer;
 }
 
-.close {
-    width: 1px;
-    height: 15px;
+.close-btn img {
+    width: 45px; 
+    height: 45px; 
 }
-
-
-
-
-

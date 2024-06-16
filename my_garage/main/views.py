@@ -12,8 +12,11 @@ def input_view(request):
 def reminder_view(request):
     return render(request, 'main/instruction/reminder.html')
 
+def wheels_view(request):
+    return render(request, 'main/instruction/wheels.html')
+
 def map_view(request):
     return render(request, 'main/instruction/map.html')
 
 def idea_view(request):
-    return render(request, 'main/idea.html')
+    return render(request, 'main/idea_elements/idea.html')

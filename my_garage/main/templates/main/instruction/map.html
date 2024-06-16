@@ -1,5 +1,9 @@
 {% extends "main/instruction/instruction.html" %}
 
+{% block icon %}
+<img src="https://cdn-icons-png.flaticon.com/512/1179/1179018.png" alt="Иконка карты">
+{% endblock %}
+
 {% block title %}
 <h1>Карта</h1>
 {% endblock %}
@@ -8,5 +12,10 @@
 <p>По вкладке <span>«Карта»</span>, вы сможете найти множество различных мест, таких как <span>АЗС,</span> <span>Автомойку,</span> <span>Зарядную</span> <span>станцию,</span> <span>СТО,</span> <span>автомагазины,</span> <span>автосалоны,</span> <span>автомастерские,</span> <span>мойки</span> <span>для</span> <span>автомобилей,</span> <span>магазины</span> <span>автозапчастей,</span> <span>и</span> <span>многое</span> <span>другое.</span> <span>Это</span> <span>удобное</span> <span>средство</span> <span>для</span> <span>поиска</span> <span>всего,</span> <span>что</span> <span>может</span> <span>понадобиться</span> <span>вам</span> <span>и</span> <span>вашем</span> <span>автомобиле.</span></p>
 {% endblock %}
 
-{% block back %}<button class="back"><a href="">Назад</a></button>{% endblock %}
-{% block next %}<button class="next"><a href="">Далее</a></button>{% endblock %}
+{% block back %}
+<button class="back"><a href="{% url 'wheels' %}">Назад</a></button>
+{% endblock %}
+
+{% block next %}
+<button class="next"><a href="{% url 'input' %}">Далее</a></button>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "main/instruction/instruction.html" %}
+
+{% block icon %}
+<img src="https://cdn-icons-png.flaticon.com/512/226/226343.png" alt="Иконка карты">
+{% endblock %}
+
+{% block title %}
+<h1>Колеса</h1>
+{% endblock %}
+
+{% block p %}
+<p><span>Этот</span> <span>раздел</span> <span>позволяет</span> <span>вам</span> <span>следить</span> <span>за</span> <span>комплектами</span> <span>шин</span> <span>и</span> <span>дисков</span> <span>вашего</span> <span>автомобиля.</span> <span>Вы</span> <span>можете</span> <span>контролировать</span> <span>общий</span> <span>пробег</span> <span>и</span> <span>получать</span> <span>уведомления</span> <span>о</span> <span>необходимости</span> <span>замены.</span> <span>При</span> <span>каждой</span> <span>замене</span> <span>шин</span> <span>или</span> <span>дисков</span> <span>не</span> <span>забудьте</span> <span>зайти</span> <span>в</span> <span>приложение</span> <span>и</span> <span>обновить</span> <span>информацию</span> <span>о</span> <span>новом</span> <span>комплекте.</span></p>
+{% endblock %}
+
+{% block back %}
+<button class="back"><a href="{% url 'reminder' %}">Назад</a></button>
+{% endblock %}
+
+{% block next %}
+<button class="next"><a href="{% url 'map' %}">Далее</a></button>
+{% endblock %}
