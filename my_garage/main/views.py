@@ -18,5 +18,8 @@ def wheels_view(request):
 def map_view(request):
     return render(request, 'main/instruction/map.html')
 
+def maps_view(request):
+    return render(request, 'main/maps/maps.html')
+
 def idea_view(request):
     return render(request, 'main/idea_elements/idea.html')

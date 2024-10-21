@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo1">CarAnalytics</a>
+        <img src="https://images.vexels.com/media/users/3/154251/isolated/preview/fef0c563c39f2746c35604e969ffe3ef-bmw-car-front-view-silhouette.png" class="pic">
+        <nav>
+            <ul>
+                <li><a href="#">Мой автопарк</a></li>
+                <li><a href="#">Затраты на авто &bigtriangledown;</a>
+                    <ul>
+                        <li><a href="#">Заправка</a></li>
+                        <li><a href="#">Детейлинг&bigtriangledown;</a></li>
+                    <ul class="#"></ul>
+                       <li><a href="#" class="">Мойка</a></li>
+                        <li><a href="#" class="">Полировка</a></li>              
+                    </ul>
+                <li><a href="#">Стоянка&bigtriangledown;</a></li>
+                    <ul class="#"></ul>
+                        <li><a href="#" class="">Парковка</a></li>
+                        <li><a href="#" class="">Платная дорога</a></li> 
+                        <li><a href="#" class="">Зарядная станция</a></li>              
+                    </ul>
+                <li><a href="#">Обслуживание&bigtriangledown;</a></li>
+                <li><a href="#">СТО</a></li>
+                </ul>
+                </li>
+                <li><a href="https://t.me/avtopressa">Новости в мире авто</a></li>
+                <li><a href="#">Карта &bigtriangledown;</a>
+                    <ul><li><a href="{% url 'maps' %}">АЗС</a></li>
+                        <li><a href="#">Автомойка</a></li>
+                        <li><a href="#">Зарядная станция</a></li>
+                        <li><a href="#">СТО</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Настройки &bigtriangledown;</a>
+                    <ul>
+                        <li class="#"><a href="#">Авторизация/Регистрация</a></li>
+                        <li><a href="#">Напоминание</a></li>
+                        <li><a href="#">Помощь &bigtriangledown;</a>
+                            <ul class="submenu">
+                                <li><a href="{% url 'input' %}" class="instruc">Инструктаж</a></li>
+                                <li><a href="https://www.instagram.com/nekit_mm5cs?igsh=bnFqaTNhMjk1d2Z1&utm_source=qr">Чат с поддержкой</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">О приложении &bigtriangledown;</a>
+                    <ul class="submenu">
+                        <li><a href="{% url 'idea' %}">Предложить идею</a></li>
+                        <li><a href="#">Версия 1.1.1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+
+
+<li><a href="#">О приложении &bigtriangledown;</a>
+    <ul class="submenu">
+        <li><a href="{% url 'idea' %}">Предложить идею</a></li>
+        <li><a href="#">Версия 1.1.1</a></li>
+    </ul>
+</li>
