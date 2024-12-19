@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(43, 43, 43);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+}
+
+.instruc {
+    padding: 18px 40px;
+    background-color: rgb(43, 43, 43);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.window-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+}
+
+.window-container .window-box {
+    width: 450px;
+    height: 500px;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 1px 5px #000;
+    position: relative;
+} 
+
+h1 {
+    color: rgb(237, 189, 94);
+    text-align: center;
+    transition: color 0.3s;
+    position: relative;
+}
+
+h1:hover {
+    transform: scale(1.03);
+}
+
+p {
+    padding: 3%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+p span {
+    position: relative;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+p span:hover {
+    color: rgb(237, 189, 94);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.button-container button {
+    position: relative;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    border-color: rgb(160, 160, 160, .1);
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1000;
+    transition: border-color 0.3s ease;
+}
+
+.button-container button:hover {
+    border-color: rgb(235, 181, 72); 
+}
+
+.button-container button::before {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.button-container button::after {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.button-container button:hover::before {
+    transform: translateX(0%);
+}
+
+.button-container button:hover::after {
+    transform: translateX(0%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    cursor: pointer;
+}
+
+.close-btn img {
+    width: 45px; 
+    height: 45px; 
+}
